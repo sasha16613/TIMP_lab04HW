@@ -29,6 +29,7 @@ jobs:
           cd hello_world_application
           cmake -B _build
           cmake --build _build --target hello
+          ./_build/hello
           cd ..
       - name: build solver_applications
         run: |
