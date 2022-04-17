@@ -31,9 +31,9 @@ jobs:
           cmake --build _build --target hello_world
           ./_build/hello_world
           cd ..
-      - name: build solver_applications
+      - name: build solver_application
         run: |
-          cd solver_applications
+          cd solver_application
           cmake -B_build
           cmake --build _build --target solver
           cd ..
