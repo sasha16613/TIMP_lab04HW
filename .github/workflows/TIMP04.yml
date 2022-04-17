@@ -27,12 +27,13 @@ jobs:
       - name: build hello_world_application
         run: |
           cd hello_world_application
-          cmake -B _build
-          cmake --build _build --target hello
+          cmake -B_build
+          cmake --build _build --target hello_world
+          ./_build/hello_world
           cd ..
-      - name: build solver_applications
+      - name: build solver_application
         run: |
-          cd solver_applications
-          cmake -B _build
+          cd solver_application
+          cmake -B_build
           cmake --build _build --target solver
           cd ..
