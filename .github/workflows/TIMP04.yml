@@ -37,3 +37,8 @@ jobs:
           cmake -B_build
           cmake --build _build --target solver
           cd ..
+      - name: download-artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: hello_world
+          path: ./artifact
